@@ -3,15 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/main.css">
 	<title>Document</title>
 </head>
 <body>
-	<div id="user-city"></div> <div id="user-region"></div> <div id="user-country"></div><div id="user-lon"></div><div id="user-lat"></div>
-    <div id="content"></div>
-
+	<div class="container">
+		<div class="img_block">
+			<div class="topInfo">
+				<div id="user-city"></div> 
+				<div class="coord">
+					<div id="user-lon"></div>
+					<div id="user-lat"></div>
+				</div>
+			<div id="temp">--</div>
+			</div>			
+		</div>
+		<div class="content_block">
+			<div id="wDescription">---</div>
+			<div id="humidity">-- %</div>
+    		<div id="pressure" alt="hellow">-- hpa</div>
+    		<div id="wind">-- m/s</div>
+		</div>	
+	</div>
 	<script src="app/app.js"></script>
 	<script src="http://yastatic.net/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-
+		
 </body>
 </html>
