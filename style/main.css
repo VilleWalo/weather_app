@@ -4,7 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 	min-height: 400px;
-	background: linear-gradient(to top left, #dcde9f, #f3f4d3);
+	background: linear-gradient(to top left, #9c7302, #e9b72e, #fb6666, #ffcece);
 }
 .container {
 	font-family: "Roboto", sans-serif;
@@ -25,7 +25,7 @@ body{
 }
 .img_block {
 	height: 80%;
-	background-color: #555;
+	background-color: #333;
 	background-position: center;
 }
 .content_block {
