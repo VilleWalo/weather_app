@@ -85,6 +85,10 @@ body{
 	justify-content: space-between;
 	color: #999;
 }
+
+#user-lat {
+	margin-right: 15px;
+}
 #temp {
 	font-size: 8em;
 	color: white;

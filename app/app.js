@@ -39,8 +39,8 @@ window.onload = function () {
   $("#user-city").text(ymaps.geolocation.city);
   lat = ymaps.geolocation.latitude.toFixed(2);
   lon = ymaps.geolocation.longitude.toFixed(2);
-  $("#user-lon").text(lon);
   $("#user-lat").text(lat);
+  $("#user-lon").text(lon);
   var content = document.getElementById("content");
   (function loadInfo() {
       var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
@@ -57,8 +57,8 @@ window.onload = function () {
   	    wDescription = mainInfo.list[0].weather[0].description.toUpperCase();
   	    humidity = mainInfo.list[0].main.humidity;
   	    wind = mainInfo.list[0].wind.speed;
-  	    status = mainInfo.list[0].weather[0].id / 100;
-  	    if(!((+status ^ 0) === +status)) {status = +status.toFixed()};
+  	    status = +mainInfo.list[0].weather[0].id / 100;
+  	    if(!((status ^ 0) === status)) {status = parseFloat(status).toFixed()};
   	    console.log(status);
         visualization();
 	  }
