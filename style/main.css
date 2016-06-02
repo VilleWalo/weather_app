@@ -4,7 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 	min-height: 400px;
-	background: linear-gradient(to top left, #9c7302, #e9b72e, #fb6666, #ffcece);
+	background-color: #e5e5e5;
 }
 .container {
 	font-family: "Roboto", sans-serif;
@@ -22,6 +22,7 @@ body{
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
+	box-shadow: 0 0 40px 2px #bbbbbb;
 }
 .img_block {
 	height: 80%;
